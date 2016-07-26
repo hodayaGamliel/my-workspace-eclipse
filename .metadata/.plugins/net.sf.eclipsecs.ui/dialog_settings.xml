@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="net.sf.eclipsecs.core.projectconfig.LocalCheckConfigurationWorkingSet">
+	</section>
+	<section name="net.sf.eclipsecs.ui.stats.views.GraphStatsView">
+		<section name="detailView">
+		</section>
+	</section>
+	<section name="net.sf.eclipsecs.ui.stats.views.MarkerStatsView">
+		<section name="masterView">
+		</section>
+		<section name="detailView">
+		</section>
+	</section>
+	<section name="net.sf.eclipsecs.core.config.GlobalCheckConfigurationWorkingSet">
+		<item value="0" key="sortColumn"/>
+		<item value="1" key="sortDirection"/>
+		<item value="93" key="colWidth2"/>
+		<item value="-1" key="selectedRow"/>
+		<item value="37" key="colWidth3"/>
+		<item value="126" key="colWidth0"/>
+		<item value="94" key="colWidth1"/>
+	</section>
+</section>

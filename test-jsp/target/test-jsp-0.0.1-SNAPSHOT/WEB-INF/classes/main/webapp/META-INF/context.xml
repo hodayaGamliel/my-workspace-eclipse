@@ -1,0 +1,22 @@
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+ 
+  <Set name="contextPath">/TakipiJSP</Set>
+  <Set name="war">foo.war</Set>
+ 
+  <Call name="setAttribute">
+
+
+<!--     
+   <Arg>org.eclipse.jetty.webapp.basetempdir</Arg>
+    <Arg>/tmp/jetty-tmp-dir</Arg>
+    </Call>
+    <Set name="tempDirectory">/tmp/jetty-tmp-dir</Set>
+   <Call name="setAttribute"> 
+  -->
+  
+  
+    <Arg>javax.servlet.context.tempdir</Arg>
+    <Arg>/tmp/jetty-tmp-dir</Arg>
+  </Call>
+</Configure>

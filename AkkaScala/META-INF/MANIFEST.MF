@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Specification-Vendor: com.typesafe.phoenix
+Specification-Title: bottleneck-sample
+Specification-Version: 0.1-SNAPSHOT
+

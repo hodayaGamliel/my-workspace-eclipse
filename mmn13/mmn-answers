@@ -1,0 +1,158 @@
+
+public class BusStop
+{
+	// Final variables
+	final private int BUSES_ARR_MAX_SIZE = 1000;
+	final private int MAX_OF_LINE_NUMBER = 99;
+
+	// Class Attributes
+	BusArrival [] _buses;
+	int _noOfBuses;
+
+	public BusStop()
+	{
+		_buses = new BusArrival[BUSES_ARR_MAX_SIZE];
+		_noOfBuses = 0;
+	}
+
+	public BusStop(int size)
+	{
+		if (size <= BUSES_ARR_MAX_SIZE)
+		{
+			_buses = new BusArrival[size];
+		}
+		else
+		{
+			_buses = new BusArrival[BUSES_ARR_MAX_SIZE];
+		}
+		_noOfBuses =  0;
+	}
+
+	public int getNoOfBuses()
+	{
+		return _noOfBuses;
+	}
+
+	public BusArrival[] getBuses()
+	{
+		BusArrival[] copyOfBusesArr = new BusArrival[_buses.length];
+		for (int i = 0; i < _buses.length; i++)
+		{
+			copyOfBusesArr[i] = _buses[i];
+		}
+		return copyOfBusesArr;
+	}
+
+	public boolean add(int line, int pass, Time1 t)
+	{
+		if (_noOfBuses < _buses.length)
+		{
+			_buses[_noOfBuses] = new BusArrival(line,pass,t);
+			_noOfBuses++;
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public void removeAllLine(int line)  //???????
+	{
+		if (line > 0 && line <= MAX_OF_LINE_NUMBER)
+		{
+			BusArrival[] temp_buses = new BusArrival[_buses.length];
+			int j = 0;
+
+			for (int i = 0; i < _noOfBuses; i++)
+			{
+				if (_buses[i].getLineNum() != line && _buses[i] != null)
+				{
+					temp_buses[j] = new BusArrival ( _buses[i]);
+					j++;
+				}
+			}
+			_noOfBuses=j;
+			_buses=temp_buses;
+		}
+	}
+
+	public int getPopularLine()
+	{
+		if (_noOfBuses != 0)
+		{
+			int[] popularBusesArr = new int[MAX_OF_LINE_NUMBER+1];
+			int mostPopularLine = 0;
+
+			for (int i = 0; i < _noOfBuses; i++)
+			{
+				popularBusesArr[_buses[i].getLineNum()]++;
+
+				if (popularBusesArr[_buses[i].getLineNum()] > popularBusesArr[mostPopularLine])
+				{
+					mostPopularLine = _buses[i].getLineNum();
+				}
+			}
+			return mostPopularLine;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+
+	public long getAverageTime ()
+	{
+		int earliestBusArrivalTime = 0;
+		int latestBusArrivalTime = 0;
+		for (int i=1; i < _noOfBuses; i++)
+		{
+			if (_buses[i].before(_buses[earliestBusArrivalTime]))
+				earliestBusArrivalTime = i;
+			else
+			if (_buses[latestBusArrivalTime].before(_buses[i]))
+				latestBusArrivalTime = i;
+			}
+		int sumTimeInSec = _buses[latestBusArrivalTime].getArrivalTime().difference(_buses[earliestBusArrivalTime].getArrivalTime());
+		return (long)(sumTimeInSec / (_noOfBuses -1));
+	}
+
+	public int totalPassengers()
+	{
+		int sumOfPass = 0;
+		for (int i = 0; i < _noOfBuses; i++)
+		{
+			sumOfPass+=_buses[i].getNoOfPass();
+		}
+		return sumOfPass;
+	}
+
+	public BusArrival maxPassengers()
+	{
+		BusArrival maxPassBuss = _buses[0];
+		for (int i = 0; i < _noOfBuses; i++)
+		{
+			if (_buses[i].getNoOfPass() > maxPassBuss.getNoOfPass())
+			{
+				maxPassBuss = _buses[i];
+			}
+		}
+		return maxPassBuss;
+	}
+
+	public String toString()
+	{
+		String str = "";
+		for (int i = 0; i < _noOfBuses; i++)
+		{
+			if (_buses[i] != null)
+			{
+				str+=_buses[i].toString() + "\n";
+			}
+		}
+		return str;
+	}
+
+
+
+}

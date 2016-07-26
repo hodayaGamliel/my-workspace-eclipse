@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site name="Jetty Bundles Repository">
+   <feature url="features/org.eclipse.jetty.bundles.f_7.6.12.201307272354.jar" id="org.eclipse.jetty.bundles.f" version="7.6.12.201307272354">
+   </feature>
+   <feature url="features/org.eclipse.jetty.bundles.f.source_7.6.12.201307272354.jar" id="org.eclipse.jetty.bundles.f.source" version="7.6.12.201307272354">
+   </feature>
+</site>

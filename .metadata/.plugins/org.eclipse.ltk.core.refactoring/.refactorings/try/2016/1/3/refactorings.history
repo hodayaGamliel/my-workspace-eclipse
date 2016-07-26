@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ThrowExceptionRonit.java&apos; to &apos;try/src&apos;&#x0A;- Original project: &apos;try&apos;&#x0A;- Destination element: &apos;try/src&apos;&#x0A;- Original element: &apos;com.example.ThrowExceptionRonit.java&apos;" description="Copy compilation unit" destination="/src" element1="/src&lt;com.example{ThrowExceptionRonit.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1452441088514" units="1" version="1.0"/>
+</session>

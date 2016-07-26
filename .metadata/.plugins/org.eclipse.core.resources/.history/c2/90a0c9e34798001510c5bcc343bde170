@@ -1,0 +1,144 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
+public class Sel1 extends Sel2
+{
+		// Final variables 
+		final private static String EMAIL_PREFIX = "selenium.test.";
+		private static String EMAIL_ID = null;
+		final private static String FIRST_NAME = "Takipi";
+		final private static String LAST_NAME = "Selenium";
+		final private static String COMPANY = "SeleniumComp";
+		final private static String PHON_NUM = "-";
+		final private static String PASSOWRD = "Aa123456";
+		final private static String SIGNUP_URL = "https://app.takipi.com/account.html";
+		final private static String SIGNIN_URL = "https://app.takipi.com/login.html";
+
+		/** - 
+		 * This class creates new account at Takipi and login into https://app.takipi.com/ website
+		 */
+		public static void main(String[] args) 
+		{	
+			try
+			{
+				//Get email ID
+				EMAIL_ID = getEmailId(EMAIL_PREFIX);
+				//Get Selenium driver instance
+				driver = getDriver();
+				//Create an account
+				Boolean created = createTakipiAccount();
+				//Login if account creation is success
+
+				if(created)
+				{
+					loginToTakipiAccount();
+				}	
+			 }
+			 catch(Exception e)
+			 {
+			 	System.out.println(e.getMessage());
+			 } 
+			 finally
+			 {
+				driver.close();
+				driver.quit();
+			 }	
+		}
+		
+		/**
+		 * Trying creating a new account at Takipi .
+		 * @return True if it's success . 
+		 */
+		private static boolean createTakipiAccount()
+		{
+			Boolean createdFlag = false;
+				try
+				{
+					//Open the Signup link
+					driver.get(SIGNUP_URL);
+					waitForElement(driver, By.id("googleSigninBtn"));
+
+					//Start filling form
+					//driver.findElement(By.cssSelector("");
+					
+					driver.findElement(By.cssSelector("input.email")).clear();
+				    driver.findElement(By.cssSelector("input.email")).sendKeys(EMAIL_ID);
+				    
+				    driver.findElement(By.cssSelector("input.firstName")).clear();
+				    driver.findElement(By.cssSelector("input.firstName")).sendKeys(FIRST_NAME);
+				    
+				    driver.findElement(By.cssSelector("input.lastName")).clear();
+				    driver.findElement(By.cssSelector("input.lastName")).sendKeys(LAST_NAME);
+
+				    driver.findElement(By.cssSelector("input.company")).clear();
+				    driver.findElement(By.cssSelector("input.company")).sendKeys(COMPANY);				
+
+				    driver.findElement(By.cssSelector("input.phone")).clear();
+				    driver.findElement(By.cssSelector("input.phone")).sendKeys(PHON_NUM);	
+				    
+				    driver.findElement(By.cssSelector("input.password")).clear();
+				    driver.findElement(By.cssSelector("input.password")).sendKeys(PASSOWRD);
+				    
+				    driver.findElement(By.cssSelector("input.confirmPassword")).clear();
+				    driver.findElement(By.cssSelector("input.confirmPassword")).sendKeys(PASSOWRD);
+				    
+				    //CLick on Create Account
+				    driver.findElement(By.cssSelector("a.createAccountBtn")).click();
+				    
+				    //Check account created successfully?
+			//	    waitForElement(driver, By.cssSelector("h3.accountCreated"));
+				    
+//				    Assert.assertEquals(driver.findElement(By.cssSelector("h3.accountCreated")).getText().trim(),
+//				    		"Your account was created successfully!");
+//				    
+				    System.out.println("Created successfully!!");
+
+				    createdFlag = true;
+				    
+				}
+				catch (Exception e) 
+				{
+					createdFlag = false;
+					e.printStackTrace();
+					throw new RuntimeException("There is an issue in creating Takipi Account! "+e.getMessage());
+				}
+			
+			return createdFlag;
+		}
+		
+		/**
+		 * Sing in www.Takipi.com
+		 */
+		private static void loginToTakipiAccount()
+		{
+			try
+			{
+				System.out.println("sss");
+					//Open the Sigin link
+					driver.get(SIGNIN_URL);
+					
+					waitForElement(driver, By.className("loginEmailInput"));
+					//Enter user email id
+					driver.findElement(By.cssSelector("input.loginEmailInput")).clear();
+				    driver.findElement(By.cssSelector("input.loginEmailInput")).sendKeys(EMAIL_ID);
+				    //Enter password
+				    driver.findElement(By.cssSelector("input.loginPasswordInput")).clear();
+				    driver.findElement(By.cssSelector("input.loginPasswordInput")).sendKeys(PASSOWRD);
+				    //Click on Login
+				    driver.findElement(By.cssSelector("a.loginBtn")).click();
+				    //Check user name displayed in top right corner
+				    waitForElement(driver, By.cssSelector("li.account"));
+				    
+				    //Check page title
+//				    Assert.assertEquals(driver.getTitle().trim(),"Takipi - Dashboard");
+//				    System.out.println("Login success!");
+				    
+			}
+			catch(Exception  e)
+			{
+					throw new RuntimeException("There is an issue in login into Takipi Account! "+e.getMessage());
+			}
+		}
+}

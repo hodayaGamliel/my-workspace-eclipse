@@ -1,0 +1,51 @@
+package org.apache;
+
+import java.util.Random;
+
+import com.example.RethrowComplex;
+
+public class RetrowComplex2
+{
+	public static void main(String[] args) throws Exception 
+	{	
+		//call random function with a range 
+		int numFunction = randomNumber(3);
+		int x = 3;
+		if (numFunction == 1)
+		{
+			one();
+		}
+		else if(numFunction == 2)
+		{
+			two();
+		}
+		else if(numFunction == 3)
+		{
+			three();
+		}
+	}
+	
+	public static void one() throws Exception
+	{
+		RethrowComplex r = new RethrowComplex();
+		r.rethrowException(randomNumber(4));
+	}
+	public static void two() throws Exception
+	{
+		RethrowComplex r = new RethrowComplex();
+		r.rethrowException(randomNumber(4));
+	}
+	public static void three() throws Exception
+	{
+		RethrowComplex r = new RethrowComplex();
+		r.rethrowException(randomNumber(4));
+	}
+		
+	public static int randomNumber(int max)
+	{
+		Random rand = new Random();
+		int num = (rand.nextInt(max)+1);
+		num=num+1;
+		return num;
+	}
+}

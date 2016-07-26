@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="73" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
+	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
+	<item value="355" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
+	<item value="/Users/takipimbp1/Projects/takipi/apollo/takipi-sdk/takipi-sdk/target" key="JavaClasspathTab.LAST_PATH_SETTING"/>
+	<item value="218" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;org.apache{RetrowComplex2.java[RetrowComplex2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tomcat-for-nginx/\/Users\/takipimbp1\/.m2\/repository\/junit\/junit\/3.8.1\/junit-3.8.1.jar&amp;lt;junit.swingui(TestRunner.class[TestRunner&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=recursion-200-methods-throw-exceptions/src&amp;lt;com.example{ShiraClass.java[ShiraClass&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Try2.java[Try2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestJUL.java[TestJUL&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=thread-try/src&amp;lt;com.example{MyThresds.java[MyThresds&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=thread-try2/src&amp;lt;com.example{MyThreads2.java[MyThreads2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-3edparty-and-rethrow/src&amp;lt;com.hodaya{Yael.java[Yael&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestLogSlf4j.java[TestLogSlf4j&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;com.example{TrowIntoCatch.java[TrowIntoCatch&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Try.java[Try&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-3rd-party/src&amp;lt;com.example{Chen.java[Chen&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-3edparty-and-rethrow/src&amp;lt;org.apache{Moshe.java[Moshe&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;com.example{ThrowExcepIntoCatchTwoDiffExcep.java[ThrowExcepIntoCatchTwoDiffExcep&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;com.example{ThrowLogExcepIntoCatch.java[ThrowLogExcepIntoCatch&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestLog4j.java[TestLog4j&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;com.example{ThrowExcepIntoCatchSameExcep.java[ThrowExcepIntoCatchSameExcep&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;org.apache{RetrowComplexNew2.java[RetrowComplexNew2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Trycaught.java[Trycaught&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{TryUncaught.java[TryUncaught&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{TryUncaught3.java[TryUncaught3&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-3edparty-and-rethrow/src&amp;lt;com.hodaya{Yaeli.java[Yaeli&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-3rd-party/src&amp;lt;com.example{David.java[David&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-caught-point-exceptions2/src&amp;lt;org.apache{CaughtPoint2Complex.java[CaughtPoint2Complex&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{ThrowExcepion2.java[ThrowExcepion2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{ThrowExcepion5.java[ThrowExcepion5&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{TryUncaught1.java[TryUncaught1&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-rethrow/src&amp;lt;com.example{RethrowComplexNew.java[RethrowComplexNew&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Trycaught2.java[Trycaught2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=recursion-200-methods-throw-exceptions/src&amp;lt;com.example{ArielClass.java[ArielClass&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-nonce/src&amp;lt;com.example{Nonce1.java[Nonce1&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{ThrowException4.java[ThrowException4&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=selenium/src&amp;lt;selenium{Sel1.java[Sel1&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Ronit/src&amp;lt;agent{Main.java[Main&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestLog4j2.java[TestLog4j2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestLogback.java[TestLogback&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{TestJULI.java[TestJULI&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=agent/src&amp;lt;{Main.java[Main&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=agent/src&amp;lt;agent{Main.java[Main&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-3rd-party/src&amp;lt;org.apache{TestMain.java[TestMain&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=akka/src&amp;lt;hodaya{AkkaTest.java[AkkaTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=testers-logs/src&amp;lt;com.example{BoomMe3.java[BoomMe3&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=tester-caught-point-exceptions2/src&amp;lt;com.example{CaughtPointComplex.java[CaughtPointComplex&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Main2.java[Main2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=try/src&amp;lt;com.example{Test7.java[Test7&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="383" key="DIALOG_WIDTH"/>
+			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+			<item value="432" key="DIALOG_HEIGHT"/>
+			<item value="100" key="DIALOG_X_ORIGIN"/>
+			<item value="0" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="500" key="SashWeightTree"/>
+		<item value="500" key="SashWeightDetails"/>
+		<item value="600" key="WIDTH"/>
+		<item value="156" key="HEIGHT"/>
+	</section>
+	<section name="org.eclipse.jdt.debug.ui.RUNTIME_CLASSPATH_ADVANCED_DIALOG">
+		<item value="212" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="277" key="DIALOG_HEIGHT"/>
+		<item value="328" key="DIALOG_X_ORIGIN"/>
+		<item value="163" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
